@@ -11,8 +11,6 @@ public class Program {
         h2.print();
 
 
-
-
         h.setName("Богдан Хмельницький");
         h.setAge(0);
         h.setAddress("Шевченка");
@@ -50,7 +48,7 @@ public class Program {
         h.printAgeInfo();
         h.backslash();
 
-        h.addressaPhone();
+        h.printContactInfo();
         System.out.println("AvgWeight is " + h.avgWeight());
 
 

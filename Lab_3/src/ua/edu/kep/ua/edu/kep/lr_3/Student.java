@@ -42,5 +42,9 @@ public class Student extends Human {
         this.course = course;
     }
 
+    public void infoCourse() {
+        System.out.println("Course = " + (8 - Integer.parseInt(String.valueOf(groupName.charAt(4)))));
+    }
+
 
 }

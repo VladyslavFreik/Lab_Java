@@ -10,8 +10,10 @@ public class Program2 {
 
         s.backslash();
 
-        Human s1 = new Student("Вася Пупкін", 18, "ПІ-13-01(02)", 3);
+        Student s1 = new Student("Вася Пупкін", 18, "ПІ-13-01", 3);
         s1.print();
+        System.out.println();
+        s1.infoCourse();
 
 
 
