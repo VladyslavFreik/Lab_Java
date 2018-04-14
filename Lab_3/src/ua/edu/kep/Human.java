@@ -40,8 +40,7 @@ public class Human {
         return weight;
     }
 
-    public int getAge()
-    {
+    public int getAge()    {
         return age;
     }
 
@@ -73,16 +72,18 @@ public class Human {
         this.weight = weight;
     }
 
-    public void setAge(int value)
-    {
-        this.age = value;
-
-
-    }
-
     public void setName(String value){
         this.name = value;
     }
+
+    public void setAge(int value) {
+        if (value > 0)
+            this.age = value;
+        else this.age = 1;
+
+
+    }
+
 
     public void print() {
         System.out.println("Name is " + name);
