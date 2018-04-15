@@ -1,0 +1,25 @@
+git init - ініціалізувати гіт (тупо створює папку із гітом)
+git remote add origin "your repo shh or https" - - додаєш віддалений репозиторій, куди заливатимеш проекти (тобі треба буде ввести логін і пароль з гіта)
+git checkout -b <твоя вітка>  - створюєш локальну вітку і переходиш на неї 
+git pull origin master - підкачуєш файли із віддаленого мастера (не обов'язково)
+git add --all - додаєш всі файли (крім тих, які записані в .gitignore)
+git commit -m "Add Hometask1" - записуєш, що ти зробив
+git status - перевіряєш статус, якщо все окі, то можна пушити
+git push origin <твоя вітка> - заливаєш на свою вітку (якщо щось натупиш із папками і доведеться заново їх створювати)
+
+Перейменування вітки
+git branch --move <old_name> <new_name> - Переміщення вказівника на нову гілку
+git checkout <new_name> - Перехід на нову гілку
+git push -u origin <new_name> - Переписання історії з попередньої гілки в нову
+git push origin --delete <old_name> - Видалення старої гілки
+
+
+MERGE
+git merge <вітка з якою мерджити> - об'єднання цієї з <вітка з якою мерджити> віткою
+git merge --allow-unrelated-histories <вітка з якою мерджити> - Для гілок без спільної історії
+В редакторі:
+1. press "i"
+2. write your merge message
+3. press "esc"
+4. write ":wq"
+5. then press enter
