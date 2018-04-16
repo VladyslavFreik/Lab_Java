@@ -1,17 +1,18 @@
-import java.util.Scanner; // Р†РјРїРѕСЂС‚СѓС”РјРѕ РєР»Р°СЃ
+import java.util.Scanner; // Імпортуємо клас
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // РЎС‚РІРѕСЂСЋС”РјРѕ РѕР±'С”РєС‚ РєР»Р°СЃСѓ Scanner
-        int i = 2;
-        System.out.print("Р’РІРµРґС–С‚СЊ С†С–Р»Рµ С‡РёСЃР»Рѕ: ");
-        if (sc.hasNextInt()) { // РїРѕРІРµСЂС‚Р°С” С–СЃС‚РёРЅСѓ СЏРєС‰Рѕ Р· РїРѕС‚РѕРєСѓ РІРІРµРґРµРЅРЅСЏ РјРѕР¶РЅР°
-            // Р·С‡РёС‚Р°С‚Рё С†С–Р»Рµ С‡РёСЃР»Рѕ
-            i = sc.nextInt(); // Р—С‡РёС‚СѓС” С†С–Р»Рµ С‡РёСЃР»Рѕ Р· РїРѕС‚РѕРєСѓ РІРІРµРґРµРЅРЅСЏ С–
-            // Р·Р±РµСЂС–РіР°С”РјРѕ РІ Р·РјС–РЅРЅСѓ
-            System.out.println(i * 2);
-        } else {
-            System.out.println("Р’Рё РІРІРµР»Рё РЅРµ С†С–Р»Рµ С‡РёСЃР»Рѕ");
-        }
-    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); // Створюємо об'єкт класу Scanner
+		int i = 2;
+		System.out.print("Введіть ціле число: ");
+		if (sc.hasNextInt()) { // повертає істину якщо з потоку введення можна
+								// зчитати ціле число
+			i = sc.nextInt(); // Зчитує ціле число з потоку введення і
+								// зберігаємо в змінну
+			System.out.println(i * 2);
+		} else {
+			System.out.println("Ви ввели не ціле число");
+		}
+		sc.close();
+	}
 }

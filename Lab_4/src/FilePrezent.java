@@ -1,20 +1,19 @@
 import java.io.File;
 public class FilePrezent {
-    static void p(String s) {
-        System.out.println(s);
-    }
-    public static void main(String[] args) {
-        File f1 = new File(
-
-                "E:/РќР°РІС‡Р°РЅРЅСЏ/2 СЃРµРјРµСЃС‚РµСЂ/Java//Lab_4//file.txt");
-        p("Р†РјвЂ™СЏ С„Р°Р№Р»Сѓ: " + f1.getName());
-        p("РЁР»СЏС…: " + f1.getPath());
-        p("РџРѕРІРЅРёР№ С€Р»СЏС…: " + f1.getAbsolutePath());
-        p("РќР°РґРєР°С‚Р°Р»РѕРі: " + f1.getParent());
-        p(f1.exists() ? " С–СЃРЅСѓС”" : " РЅРµ С–СЃРЅСѓС”");
-        p(f1.canWrite() ? " РґР»СЏ Р·Р°РїРёСЃСѓ" : " РЅРµ РґР»СЏ Р·Р°РїРёСЃСѓ");
-        p(f1.canRead() ? " РґР»СЏ С‡РёС‚Р°РЅРЅСЏ" : " РЅРµ РґР»СЏ С‡РёС‚Р°РЅРЅСЏ");
-        p("РћСЃС‚Р°РЅРЅСЏ Р·РјС–РЅР° С„Р°Р№Р»Сѓ: " + f1.lastModified());
-        p("Р РѕР·РјС–СЂ С„Р°Р№Р»Сѓ " + f1.length() + " Р±Р°Р№С‚С–РІ");
-    }
+	static void p(String s) {
+		System.out.println(s);
+	}
+	public static void main(String[] args) {
+		File f1 = new File(
+				"C:/Users/DELL/eclipse-workspace/LR_4/src/FilePrezent.java");
+		p("Ім’я файлу: " + f1.getName());
+		p("Шлях: " + f1.getPath());
+		p("Повний шлях: " + f1.getAbsolutePath());
+		p("Надкаталог: " + f1.getParent());
+		p(f1.exists() ? " існує" : " не існує");
+		p(f1.canWrite() ? " для запису" : " не для запису");
+		p(f1.canRead() ? " для читання" : " не для читання");
+		p("Остання зміна файлу: " + f1.lastModified());
+		p("Розмір файлу " + f1.length() + " байтів");
+	}
 }

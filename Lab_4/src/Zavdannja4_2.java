@@ -1,8 +1,22 @@
 import java.io.*;
+import java.util.Scanner;
 public class Zavdannja4_2 {
-    public static void main(String[] args) {
-        int number = 225;
-        System.out.println(number + "  Сѓ РґРІС–Р№РєРѕРІС–Р№ СЃРёСЃС‚РµРјС– "
-                + Integer.toBinaryString(number));
-    }
+	public static void main(String[] args) {
+		int i;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Введіть ціле число:");
+		if (sc.hasNextInt()) { // повертає істину якщо з потоку введення можна
+			// зчитати ціле число
+			i = sc.nextInt(); // Зчитує ціле число з потоку введення і
+			// зберігаємо в змінну
+			System.out.println(i + "  у двійковій системі "
+					+ Integer.toBinaryString(i));
+			System.out.println(i + "  у вісімковій системі "
+					+ Integer.toOctalString(i));
+			System.out.println(i + "  у шістнадцятковій системі "
+					+ Integer.toHexString(i));
+			} else {
+				System.out.println("Ви ввели не ціле число");
+			}
+	}
 }

@@ -1,21 +1,21 @@
 import java.io.File;
 public class DirectoryPrezent {
-    public static void main(String[] args) {
-        String dirname = "  E:/–ù–∞–≤—á–∞–Ω–Ω—è/2 —Å–µ–º–µ—Å—Ç–µ—Ä/Java/Lab_4/";
-        File f1 = new File(dirname);
-        if (f1.isDirectory()) {
-            System.out.println("–ö–∞—Ç–∞–ª–æ–≥ " + dirname);
-            String s[] = f1.list();
-            for (int i = 0; i < s.length; i++) {
-                File f = new File(dirname + "/" + s[i]);
-                if (f.isDirectory()) {
-                    System.out.println(s[i] + " - —Ü–µ –∫–∞—Ç–∞–ª–æ–≥");
-                } else {
-                    System.out.println(s[i] + " - —Ü–µ —Ñ–∞–π–ª");
-                }
-            }
-        } else {
-            System.out.println(dirname + " - —Ü–µ –Ω–µ –∫–∞—Ç–∞–ª–æ–≥");
-        }
-    }
+	public static void main(String[] args) {
+		String dirname = "C:/Users/DELL/eclipse-workspace/LR_4/";
+		File f1 = new File(dirname);
+		if (f1.isDirectory()) {
+			System.out.println(" ‡Ú‡ÎÓ„ " + dirname);
+			String s[] = f1.list();
+			for (int i = 0; i < s.length; i++) {
+				File f = new File(dirname + "/" + s[i]);
+				if (f.isDirectory()) {
+					System.out.println(s[i] + " - ˆÂ Í‡Ú‡ÎÓ„");
+				} else {
+					System.out.println(s[i] + " - ˆÂ Ù‡ÈÎ");
+				}
+			}
+		} else {
+			System.out.println(dirname + " - ˆÂ ÌÂ Í‡Ú‡ÎÓ„");
+		}
+	}
 }
