@@ -1,3 +1,5 @@
+package Lab_5;
+
 public class Bylbashka {
     static String masuv_rjadkiv[] = { "Ukraine", "Second", "ALBA", "one", "Poland",
             "KEP" };

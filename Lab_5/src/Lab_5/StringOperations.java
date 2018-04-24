@@ -1,7 +1,9 @@
+package Lab_5;
+
 public class StringOperations {
     public static void main(String[] args) {
-        String a = "StringOperations";
-        String b= new String("StringOperations");
+        String a = "Lab_5.StringOperations";
+        String b= new String("Lab_5.StringOperations");
         String c = a;
         String d = "stringoperations";
 

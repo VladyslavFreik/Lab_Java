@@ -1,3 +1,5 @@
+package Lab_5;
+
 public class SortAandZ {
     static String Pi[] = {"Барабалюк","Кловак","Матвійчук","Собчишин","Ткачук","Фреїк"};
 

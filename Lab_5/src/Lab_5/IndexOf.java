@@ -1,3 +1,5 @@
+package Lab_5;
+
 public class IndexOf {
     public static void main(String[] args) {
         String string = "Hello World";

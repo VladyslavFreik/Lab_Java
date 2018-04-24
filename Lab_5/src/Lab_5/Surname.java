@@ -1,3 +1,5 @@
+package Lab_5;
+
 import java.util.Scanner;
 
 public class Surname {
