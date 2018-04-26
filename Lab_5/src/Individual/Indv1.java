@@ -36,7 +36,7 @@ public class Indv1  {
         while(b != 0) {
             System.out.println("Input surname and name ");
             inputepib();
-            System.out.print("Input date ");
+            System.out.print("Input date dd/mm/yyyy ");
             String date = sc.next();
             System.out.println("date - " + validator.validate(date));
             if (validator.validate(date)) {
@@ -76,9 +76,11 @@ public class Indv1  {
     public static void inputepib(){
         String surname;
         String name;
-        String pattern = "^[A-Za-z][A-Za-z-_\\.]{1,20}$";
+        String pattern = "^[A-Za-z][A-Za-z-_\\.]{1,30}$";
 
+        System.out.print("Surname - ");
         surname = sc.next();
+        System.out.print("Name - ");
         name = sc.next();
 
         Pattern r = Pattern.compile(pattern);
